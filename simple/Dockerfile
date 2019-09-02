@@ -3,7 +3,7 @@ FROM python:3
 RUN mkdir /app
 WORKDIR /app
 
-COPY simple/requirements.txt /app/requirements.txt
+COPY requirements.txt /app/requirements.txt
 RUN mkdir ~/.pip
 COPY pip.conf /root/.pip
 
